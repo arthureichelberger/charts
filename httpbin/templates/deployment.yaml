@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - image: {{ .Values.image.repository }} # Change this
+          name: {{ .Release.Name }}-app
           imagePullPolicy: Always
       dnsPolicy: ClusterFirst
       restartPolicy: Always
