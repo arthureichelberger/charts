@@ -1,0 +1,4 @@
+replicaCount: 1
+
+image:
+  repository: api:0.0.1
